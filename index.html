@@ -21,9 +21,19 @@
   </header>
   <main class="container">
     <p class="mb-5" style="max-width: 500px;">
-      This is a website for the supplementary material of VIS 2023 submission "Dupo: A mixed-initiative authoring system
-      for responsive visualization" (ID: 1020).
+      This is a website for the supplementary material of VIS 2023 paper "Dupo: A mixed-initiative authoring system
+      for responsive visualization.".
     </p>
+    <h2 class="mb-3">Demo</h2>
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <section class="bg-info-subtle rounded-4 p-3 mb-3">
+          <a class="btn btn-info rounded-3 mb-1 me-2" href="https://see-mike-out.github.io/dupo-public-demo"
+            target="_blank"><i class="bi bi-app"></i>
+            Dupo public demo version</a>
+        </section>
+      </div>
+    </div>
     <h2 class="mb-3">Documentation</h2>
     <div class="row">
       <div class="col-12 col-md-5">
@@ -32,9 +42,11 @@
           <a class="btn btn-info rounded-3 mb-1 me-2" href="./manual/index.html"><i class="bi bi-layout-sidebar"></i>
             User
             manual</a>
-          <a class="btn btn-info rounded-3 mb-1 me-2" href="./video-demo.html"><i class="bi bi-play-btn"></i>
+          <a class="btn btn-info rounded-3 mb-1 me-2" href="https://youtu.be/NpFMUXXeaK0" target="_blank"><i
+              class="bi bi-play-btn"></i>
             Video demo</a>
-          <a class="btn btn-info rounded-3 mb-1 me-2" href="./walkthrough-video.html"><i class="bi bi-play-btn"></i>
+          <a class="btn btn-info rounded-3 mb-1 me-2" href="https://youtu.be/WCQ80Csoikc" target="_blank"><i
+              class="bi bi-play-btn"></i>
             Walkthrough video</a>
         </section>
       </div>
@@ -144,39 +156,6 @@
         </section>
       </div>
     </div>
-    <h2 class="mb-3">Instruction (also in README.md)</h2>
-    <p class="mb-1" style="max-width: 600px;">
-      In general, it is okay to open this <code>index.html</code> file in the directory.
-    </p>
-    <p class="mb-1" style="max-width: 600px;">
-      However, if you <em>need a demo video subtitle</em> (the walkthrough video does <em>NOT</em> include voice and
-      subtitle), then
-      it is required to run a local server because of HTML5 cross-origin policy.
-    </p>
-    <p class="mb-1" style="max-width: 600px;">
-      To do so, you can simply run the below command in your terminal/CMD.
-    </p>
-    <code>
-      <pre class="mb-1 p-2 bg-light rounded-3" style="max-width: 600px;">
-# (locate this directory first)
-python -m http.server</pre>
-    </code>
-    <p class="mb-3" style="max-width: 600px;">
-      Then, access http://localhost:8000 (the port number may be different).
-    </p>
-    <h4 class="h5 mb-2">Note 1</h4>
-    <p class="mb-3" style="max-width: 600px;">
-      When browsing this supplementary material website on the local server, the video might not be seekable/jumpable on
-      Chrome browser due to its video buffer policy. In that case, you can use Firefox (recommended) or Safari (not
-      tested on Edge). We are also planning to host high-quality videos on YouTube for camera-ready.
-    </p>
-    <h4 class="h5 mb-2">Note 2</h4>
-    <p class="mb-3" style="max-width: 600px;">
-      Just to watch the video with subtitle, go to <code>files</code> directory, and open <code>video-demo.mp4</code> on
-      a common video player
-      (e.g., VLC player) with <code>dupo-demo.srt</code> subtitle if needed.
-
-    </p>
   </main>
   <footer class="container py-3 text-secondary">
     <span>&copy; Hyeok Kim</span>
