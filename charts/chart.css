@@ -1,0 +1,34 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .interaction-note {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0.5rem;
+    }
+
+    .h-sub {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #676767;
+      margin: 0 0 0.25rem 0;
+    }
+
+    .interaction_added {
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      background-color: #ffe8a8;
+      border: 1px solid rgba(255, 196, 34, 1);
+      font-size: 0.75rem;
+    }
+
+    .vega-embed {
+      position: relative;
+    }

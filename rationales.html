@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <title>Dupo - Supplementary Material</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" value="Dupo - Supplementary Material Rationales for Exploration Suggestions" />
+  <meta name="author" value="Hyeok Kim" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <style>
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      margin-bottom: -0.5rem;
+    }
+
+    h3,
+    h4,
+    p,
+    li {
+      font-size: 1rem;
+    }
+
+    h3 {
+      margin-top: 1.25rem;
+    }
+
+    h4 {
+      font-weight: 400;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container py-2">
+    <h1>Dupo–Rationales for Exploration suggestions</h1>
+    <p><a href="index.html">Back to main</a></p>
+  </header>
+  <main class="container">
+    <h2>Conversion 1: Desktop ⇒ Phone</h2>
+    <h3>Case 1: Default</h3>
+    <h4>Rationale 1: Minimize changes</h4>
+    <ul>
+      <li>Rescale (chart size, mark size, and text size) to the intended size.</li>
+    </ul>
+    <h4>Rationale 2: Avoid overplotting</h4>
+    <ul>
+      <li>Aggregate if there is a hierarchy that is stated or natural.</li>
+    </ul>
+
+    <h3>Case 2: Non-geospatial, position-based charts</h3>
+    <p>Mark types: bar, line, point, etc.</p>
+    <h4>Rationale 3: Fit to a different aspect ratio</h4>
+    <ul>
+      <li>Transpose a chart.</li>
+      <li>In case of a 1D dot plot, convert to a bar chart.</li>
+    </ul>
+    <h4>Rationale 4: Avoid overplotting</h4>
+    <ul>
+      <li>Convert to a heatmap if there is a nominal encoding.</li>
+      <li>Separate into small multiples if there is a nominal encoding, with a default column number of 3.</li>
+    </ul>
+
+    <h3>Case 3: Geo-spatial charts</h3>
+    <p>Mark types: map</p>
+    <h4>Rationale 5: Avoid overplotting</h4>
+    <ul>
+      <li>Convert to a bar chart.</li>
+      <li>Convert to small multiples while keeping the mark type if it is not a choropleth.</li>
+    </ul>
+
+    <h3>Case 4: Non-position-based charts</h3>
+    <p>Mark types: pie</p>
+    <h4>Rationale 6: Minimize changes</h4>
+    <p>No strategies other than minimal changes.</p>
+
+    <h3>Case 5: Small multiples</h3>
+    <h4>Rationale 7: Adjust graphical density</h4>
+    <ul>
+      <li>Reduce the number of columns: 1, 2, and 3.</li>
+    </ul>
+
+    <h3>Case 6: Multi-layered charts (with different mark types)</h3>
+    <h4>Rationale 8: Adjust graphical density</h4>
+    <ul>
+      <li>Remove a less important (e.g., decorative) redundant layer (e.g., line vs. area ⇒ line).</li>
+    </ul>
+
+    <h3>Case 7: Heavily annotated charts (4+ annotations)</h3>
+    <h4>Rationale 9: Adjust graphical density</h4>
+    <ul>
+      <li>Externalize annotations with numbering.</li>
+    </ul>
+
+    <hr />
+
+    <h2>Conversion 2: Desktop ⇒ Tablet/Print</h2>
+    <h3>Case 1: Default</h3>
+    <h4>Rationale 1: Minimize changes</h4>
+    <ul>
+      <li>Rescale (chart size, mark size, and text size) to the intended size.</li>
+    </ul>
+
+    <h3>Case 2: For print</h3>
+    <h4>Rationale 2: Fit to the medium</h4>
+    <ul>
+      <li>Remove interactions.</li>
+    </ul>
+
+    <hr />
+
+    <h2>Conversion 3: Desktop ⇒ Thumbnail/Watch</h2>
+    <h3>Case 1: Default</h3>
+    <h4>Rationale 1: Adjust graphical density and this is only for skiming</h4>
+    <ul>
+      <li>Remove references.</li>
+      <li>Remove secondary titles.</li>
+      <li>Remove annotations.</li>
+    </ul>
+    <h4>Rationale 2: Minimize changes</h4>
+    <ul>
+      <li>Rescale (chart size, mark size, and text size) to the intended size.</li>
+    </ul>
+    <h4>Rationale 3: Avoid overplotting</h4>
+    <ul>
+      <li>Aggregate if there is a hierarchy that is stated or natural.</li>
+    </ul>
+
+    <h3>Case 2: Non-geospatial, position-based charts</h3>
+    <p>Mark types: bar, line, point, etc.</p>
+    <h4>Rationale 4: Avoid overplotting</h4>
+    <ul>
+      <li>Convert to a heatmap if there is a nominal encoding.</li>
+      <li>Leave only arg-min and arg-max given a temporal x axis.</li>
+    </ul>
+
+    <h3>Case 3: Geo-spatial charts</h3>
+    <p>Mark types: map</p>
+    <h4>Rationale 5: Avoid overplotting</h4>
+    <ul>
+      <li>Convert to a bar chart.</li>
+    </ul>
+
+    <h3>Case 4: Non-position-based charts</h3>
+    <p>Mark types: pie</p>
+    <h4>Rationale 6: Minimize changes</h4>
+    <p>No strategies other than minimal changes.</p>
+
+    <h3>Case 5: Small multiples</h3>
+    <h4>Rationale 7: Adjust graphical density</h4>
+    <ul>
+      <li>Reduce the number of columns to 1.</li>
+    </ul>
+
+    <h3>Case 6: Multi-layered charts (with different mark types)</h3>
+    <h4>Rationale 7: Adjust graphical density</h4>
+    <ul>
+      <li>Remove a less important (e.g., decorative) redundant layer (e.g., line vs. area ⇒ line).</li>
+    </ul>
+
+    <hr />
+
+    <h2>Conversion 4: Phone ⇒ Desktop</h2>
+    <p class="mt-3">Basically, the reverse operations of the conversion methods from Desktop to Phone.</p>
+    <h3>Case 1: Default</h3>
+    <h4>Rationale 1: Minimize changes</h4>
+    <ul>
+      <li>Rescale (chart size, mark size, and text size) to the intended size.</li>
+    </ul>
+    <h4>Rationale 2: Adjust graphical density</h4>
+    <ul>
+      <li>Disaggregate if there is a hierarchy that is stated or natural.</li>
+    </ul>
+
+    <h3>Case 2: Non-geospatial, position-based charts</h3>
+    <p>Mark types: bar, line, point, etc.</p>
+    <h4>Rationale 3: Fit to a different aspect ratio</h4>
+    <ul>
+      <li>Transpose a chart.</li>
+    </ul>
+    <h4>Rationale 4: Choose a more effective encoding channel given a more space available</h4>
+    <ul>
+      <li>Convert a heatmap to a bar chart.</li>
+      <li>Convert a heatmap to a line chart.</li>
+      <li>Convert to a map if there is longitude and latitude fields.</li>
+    </ul>
+
+    <h3>Case 3: Geo-spatial charts</h3>
+    <p>Mark types: map</p>
+    <h4>Rationale 5: Minimize changes</h4>
+    <p>No strategies other than minimal changes.</p>
+
+    <h3>Case 4: Non-position-based charts</h3>
+    <p>Mark types: pie</p>
+    <h4>Rationale 6: Minimize changes</h4>
+    <p>No strategies other than minimal changes.</p>
+
+    <h3>Case 5: Small multiples</h3>
+    <h4>Rationale 6: Adjust graphical density</h4>
+    <ul>
+      <li>Increase the number of columns: 4, 5, and 6.</li>
+      <li>Convert to a map if there are longitude and latitude fields.</li>
+    </ul>
+
+    <h3>Case 6: Single-layered charts</h3>
+    <h4>Rationale 7: Adjust graphical density</h4>
+    <ul>
+      <li>Add a decorative layer if possible (e.g., points on line, area below line).</li>
+    </ul>
+  </main>
+  <footer class="mt-3 container py-3 text-secondary border-top">
+    <span>&copy; Hyeok Kim</span>
+  </footer>
+</body>
+
+</html>

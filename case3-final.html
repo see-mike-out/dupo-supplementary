@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <title>Dupo - User Study Case 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" value="Dupo - User Study Case 3" />
+  <meta name="author" value="Hyeok Kim" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="container py-2">
+    <h1 class="mt-3">User Study Case 3: Multi-line chart (Final outcome only)</h1>
+  </header>
+  <div class="container-fluid bg-white sticky-top border-bottom">
+    <nav class="container py-2">
+      <a href="index.html">Back to main</a> /
+      Index:
+      <a href="#desktop">Desktop version</a>
+      <a href="#phone">Phone version</a>
+      <a href="#thumb">Thumbnail version</a>
+      <a href="#print">Print version</a>
+    </nav>
+  </div>
+  <div class="container py-3">
+    <p>Note: a mock dataset is used for anonymization.</p>
+  </div>
+  <main class="container">
+    <section>
+      <a name="desktop"></a>
+      <h2 class="pt-5">Desktop version</h2>
+      <div class="d-flex flex-nowrap overflow-x-scroll">
+        <article>
+          <div class="border rounded-top-3 p-3">
+            <div style="width: 940px; height: 845px; position: relative;">
+              <iframe src="./charts/case-3-desktop.html" width="940" height="845" style="overflow: hidden;"
+                scrolling="no"></iframe>
+            </div>
+          </div>
+          <div class="border rounded-bottom-3 border-top-0 p-3 bg-light">
+            <h4 class="h6 mb-0">Size: 930px &times; 835px</h4>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section>
+      <a name="phone"></a>
+      <h2 class="pt-5">Smartphone version</h2>
+      <p>The visualization designs are not responsively scaled to preserve the absolute sizes.</p>
+      <h3 class="mt-3">User's outcome</h3>
+      <div class="d-flex flex-nowrap overflow-x-scroll">
+        <article class="me-5" style="width: calc(390px + 2rem);">
+          <div class="border rounded-top-3 p-3">
+            <div style="width: 390px; height: 500px; position: relative;">
+              <iframe src="./charts/case-3-phone-output.html" width="390" height="500" style="overflow: hidden;"
+                scrolling="no"></iframe>
+            </div>
+          </div>
+          <div class="border rounded-bottom-3 border-top-0 p-3 bg-light">
+            <h5 class="h6">Size: 380px &times; 490px; </h5>
+            <h5 class="h6">User satisfaction rating: 4 (satisfied)</h5>
+            <h5 class="h6">Suggestion taken: #1</h5>
+            <h5 class="h6">Edits made</h5>
+            <ul class="mb-0">
+              <li class=""><i class="bi bi-magic"></i> Resize&nbsp;with the user-specifed size. <br /><small>This
+                  includes resizing and proportionately repositioning text elements.</small></li>
+              <li class=""><i class="bi bi-pencil-fill"></i> Modify the size, appearance, and position of the text
+                annotation.</li>
+              <li class=""><i class="bi bi-pencil-fill"></i> Modify the appearance of the mark labels (letter stroke).
+              </li>
+              <li class=""><i class="bi bi-pencil-fill"></i> Modify the appearance of the axis grids (color and stroke
+                width).</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h6>Notes</h6>
+          <p>
+            <i class="bi bi-magic"></i> Edits made by the <strong>recommender</strong>.<br />
+            <i class="bi bi-pencil-fill"></i> <strong>Manual</strong> edits made by the user.
+          </p>
+        </article>
+    </section>
+
+    <section>
+      <a name="thumb"></a>
+      <h2 class="pt-5">Thumbnail version</h2>
+      <p>The visualization designs are not responsively scaled to preserve the absolute sizes.</p>
+      <h3 class="mt-3">User's outcome</h3>
+      <div class="d-flex flex-nowrap overflow-x-scroll">
+        <article class="me-5" style="width: calc(210px + 2rem);">
+          <div class="border rounded-top-3 p-3">
+            <div style="width: 210px; height: 210px; position: relative;">
+              <iframe src="./charts/case-3-thumb-output.html" width="210" height="210" style="overflow: hidden;"
+                scrolling="no"></iframe>
+            </div>
+          </div>
+          <div class="border rounded-bottom-3 border-top-0 p-3 bg-light">
+            <h5 class="h6">Size: 200px &times; 200px; </h5>
+            <h5 class="h6">User satisfaction rating: 4 (satisfied)</h5>
+            <h5 class="h6">Suggestion taken: #1</h5>
+            <h5 class="h6">Edits made</h5>
+            <ul class="mb-0">
+              <li class=""><i class="bi bi-magic"></i> Remove the title(s)&nbsp;for a tiny view.
+              </li>
+              <li class=""><i class="bi bi-magic"></i> Resize&nbsp;with the user-specifed size. <br /><small>This
+                  includes resizing and proportionately repositioning text elements.</small></li>
+              <li class=""><i class="bi bi-magic"></i> Remove the reference(s)&nbsp;for a tiny view.
+              </li>
+              <li class=""><i class="bi bi-magic"></i> Remove the annotation(s)&nbsp;for a tiny view.
+              </li>
+              <li class=""><i class="bi bi-magic"></i> Remove the axis grid(s)&nbsp;for a tiny view.
+              </li>
+              <li class=""><i class="bi bi-pencil-fill"></i> Remove the vertical axis grid and labels.</li>
+              <li class=""><i class="bi bi-pencil-fill"></i> Remove horizotnal axis labels (in the middle).</li>
+              <li class=""><i class="bi bi-pencil-fill"></i> Remove the title.</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h6>Notes</h6>
+          <p>
+            <i class="bi bi-magic"></i> Edits made by the <strong>recommender</strong>.<br />
+            <i class="bi bi-pencil-fill"></i> <strong>Manual</strong> edits made by the user.
+          </p>
+        </article>
+      </div>
+    </section>
+
+
+    <section>
+      <a name="print"></a>
+      <h2 class="pt-5">Print version</h2>
+      <p>The visualization designs are not responsively scaled to preserve the absolute sizes.</p>
+      <h3 class="mt-3">User's outcome</h3>
+      <div class="d-flex flex-nowrap overflow-x-scroll">
+        <article class="me-5" style="width: calc(810px + 2rem);">
+          <div class="border rounded-top-3 p-3">
+            <div style="width: 810px; height: 580px; position: relative;">
+              <iframe src="./charts/case-3-print-output.html" width="810" height="580" style="overflow: hidden;" scrolling="no"></iframe>
+            </div>
+          </div>
+          <div class="border rounded-bottom-3 border-top-0 p-3 bg-light">
+            <h5 class="h6">Size: 800px &times; 570px; </h5>
+            <h5 class="h6">User satisfaction rating: 3 (just okay) due to the lack of time</h5>
+            <h5 class="h6">Suggestion taken: #1</h5>
+            <h5 class="h6">Edits made</h5>
+            <ul class="mb-0">
+              <li class=""><i class="bi bi-magic"></i> Resize&nbsp;with the user-specifed size. <br /><small>This
+                  includes resizing and proportionately repositioning text elements.</small></li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h6>Notes</h6>
+          <p>
+            <i class="bi bi-magic"></i> Edits made by the <strong>recommender</strong>.<br />
+            <i class="bi bi-pencil-fill"></i> <strong>Manual</strong> edits made by the user.
+          </p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+  <footer class="mt-3 container py-3 text-secondary border-top">
+    <span>&copy; Hyeok Kim</span>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+:root {
+  --key-color: #008599;
+}
+.nav-bar {
+  transition: 0.3s;
+}
+.nav-bar:hover {
+  background-color: rgba(0,0,0,0.025);
+}
+.nav-item a {
+  display: block;
+  color: #787878;
+  text-decoration: none;
+}
+.nav-item.active a,
+.nav-item a:hover {
+  color: var(--key-color)
+}
+.nav-item[data-nav-lavel="0"] {
+  font-size: 0.95rem;
+  margin-left: 0;
+}
+.nav-item[data-nav-lavel="1"] {
+  font-size: 0.85rem;
+  padding-left: 1.5rem !important;
+}
+
+main section  {
+  padding-left: 1rem;
+}
+main section h2 span {
+  padding-bottom: 0.1rem;
+  border-bottom: 4px solid var(--key-color);
+}
+main section p {
+  max-width: 750px;
+  font-size: 0.9rem;
+  color: #454545;
+}
+main section p em {
+  color: var(--key-color);
+}
+
+footer {
+  color: #999999;
+  font-size: 0.75rem;
+}
